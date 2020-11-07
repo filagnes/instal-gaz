@@ -1,0 +1,469 @@
+/* Eric Meyer's Reset CSS v2.0 - http://cssreset.com */
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{border:0;font-size:100%;font:inherit;vertical-align:baseline;margin:0;padding:0}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:none}table{border-collapse:collapse;border-spacing:0}
+
+/* Global style */
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.1rem;
+    line-height: 2.1rem;
+}
+
+@media screen and (min-width: 768px) {
+    body {
+        line-height: 2.6rem;
+    }
+}
+
+.blue {
+    color: #0859c6;
+    font-size: 1.4rem;
+}
+
+.navy-blue {
+    color: #003366;
+}
+
+h1 {
+    color: #ffffff;
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.4rem;
+    line-height: 1.8rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+    padding-bottom: 1rem;    
+}
+
+@media screen and (min-width: 576px) {
+   h1 {
+        font-size: 2rem;
+        line-height: 2.5rem;
+        padding-bottom: 3rem;
+   }
+}
+
+@media screen and (min-width: 992px) {
+    h1 {
+        font-size: 2.4rem;
+        line-height: 3rem;
+        padding-bottom: 5rem;
+   }
+}
+
+h2 {
+    font-size: 1.2rem;
+    font-weight: 400;
+    text-transform: uppercase;
+    font-family: 'Oswald', sans-serif;   
+    padding-top: .5rem;
+    line-height: 1.6;
+}
+
+hr {
+    margin: 0;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+.logo {
+    width: 4rem; 
+}
+
+@media screen and (min-width: 768px) {
+    .logo {
+        width: 7rem; 
+    }
+}
+
+/* Navbar */
+.navbar {
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    background-color: #ffffff;
+}
+
+@media screen and (min-width: 1200px) {
+    .navbar {
+        padding-right: 8.5rem;
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    #navbarContent {
+        display: flex;
+        justify-content: space-around;
+    }
+}
+
+.nav-item {
+    color: #303030;
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.2rem;
+    font-weight: 500;
+    border-top: 1px solid #dcdcdc;
+}
+
+@media screen and (min-width: 1200px) {
+    .nav-item {
+        font-size: 1.4rem;
+        border-top: 1px solid transparent;
+        padding: 0;
+        margin: 0 .5rem;
+    }
+} 
+
+.nav-item:hover {
+    color: #003366;    
+}
+
+
+@media screen and (min-width: 1200px) {
+    .active {
+        border-bottom: 2px solid #003366;
+    }
+}
+
+.background-main {
+    padding-top: 5rem;
+    width: 100%;
+    position: fixed;
+    z-index: -1;
+}
+
+@media screen and (min-width: 768px) {
+    .background-main {
+        width: 100%;
+        position: fixed;
+        z-index: -1;
+    }
+}
+
+.top {
+    
+    padding-top: 44%;
+    margin: 0;
+}
+
+@media screen and (min-width: 576px) {
+    .top {
+        padding-top: 40%;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .top {
+        padding-top: 35%;
+    }
+}
+
+.background {
+    width: 100%;
+    height: 100%;
+    filter: brightness(44%);
+    position: fixed;
+    z-index: -1;
+}
+
+@media screen and (min-width: 768px) {
+    .background {
+        width: 100%;
+        height: auto;
+    }
+}
+
+/* Kontakt */
+.contact {
+    padding: 5rem 2rem;
+}
+
+@media screen and (min-width: 768px) {
+    .contact {
+        padding: 10rem;
+        font-size: 1.4rem;
+    }
+}
+
+.contact h2 {
+    color: #fff;
+    font-size: 1.2rem;
+}
+
+@media screen and (min-width: 768px) {
+    .contact h2 {
+        font-size: 1.4rem;
+    }
+}
+
+.form-control {
+    border: none;
+    border-radius: 0;
+}
+
+#your-message {
+    height: 15rem;
+}
+
+button {
+    border: 1px solid #ffffff;
+    background-color: transparent;
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.3rem;
+    color: #ffffff;
+    padding: .5rem;
+}
+
+.phone, .email {
+    border: 1px solid transparent;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.2rem;
+    padding: .2rem;
+    margin: .2rem .5rem;
+} 
+
+@media screen and (min-width: 768px) {
+    .phone, .email {
+        font-size: 1.4rem; 
+    }    
+}
+
+.phone:hover, .email:hover {
+    border: 1px solid #ffffff;
+}
+
+/* Footer */
+@media screen and (min-width: 768px) {
+    .footer{
+        display: flex;
+        justify-content: center;
+    }
+}
+
+.phone-nr, .email-address {
+    border: 1px solid transparent;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.1rem;
+    padding: .1rem;
+    margin: .1rem .2rem;
+}
+
+.phone-nr:hover, .email-address:hover {
+    border: 1px solid #ffffff;
+}
+
+.copyright {
+    border-top: 1px solid #a9a9a9;
+    font-size: .7rem;
+    color: #a9a9a9;
+}
+
+.map {
+    display: flex;
+    justify-content: end;
+}
+
+.dark-gray {
+    background-color: #383838;
+}
+
+.main {
+    padding-top: 30%;
+}
+
+@media screen and (min-width: 768px) {
+    .main {
+        padding-top: 12%;
+    }
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body {
+    background: #f2f1f1
+}
+
+.bg-cream {
+    background: #f2f1f1;
+}
+
+.main-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.img {
+    width: 100%;
+    height: 100%;
+}
+
+.main-header h1 {
+    color: #003366;
+    font-size: 1.8rem;
+    text-shadow: 2px 2px 4px #808088;
+    padding: 0;
+    margin: 0;
+}
+
+@media screen and (min-width: 768px) {
+    .main-header h1 {
+        font-size: 2.5rem;
+    }
+}
+
+
+.building-name {
+    margin-top: -14%;
+    padding: 2%;
+    color: white;
+    background-color: #003366;
+    border: 1px solid transparent;
+    opacity: 0.8; 
+    transition: 1s;
+}
+
+.building-name:hover {
+    opacity: 0;
+}
+
+.building-name h2,
+.building-name h3 {
+    font-size: 1.4rem;
+}
+
+@media screen and (min-width: 768px) {
+    .building-name h2,
+    .building-name h3 {
+        font-size: 1.8rem;
+    }
+}
+
+.description {
+    padding: 1rem 1rem 5rem;
+}
+
+@media screen and (min-width: 768px) {
+    .description {
+        padding: 2rem 4rem 10rem;
+    }
+}
+
+.description h2 {
+    color: #003366;
+    font-size: 1.6rem;
+    padding: 1rem;
+}
+
+@media screen and (min-width: 768px) {
+    .description h2 {
+        font-size: 2rem;
+    }
+}
+
+.company {
+    background: #f2f1f1;
+    padding: 0.1rem 0;
+}
+
+@media screen and (min-width: 768px) {
+    .company {
+        padding: 2%;
+    }
+}
+
+.bg-1 {
+    background-image: url(air-conditioning.jpg);
+    background-repeat: no-repeat;
+}
+
+.bg-2 {
+    background-image: url(water.jpg);
+    background-repeat: no-repeat;
+}
+.bg-3 {
+    background-image: url(gaz.jpg);
+    background-repeat: no-repeat;
+}
+.bg-4 {
+    background-image: url(assemble.jpg);
+    background-repeat: no-repeat;
+}
+
+p {
+    font-size: 1rem;
+    
+    padding: 2rem;
+}
+
+@media screen and (min-width: 768px) {
+    p {
+        font-size: 1.1rem;
+        padding: 2rem 10rem;
+        font-weight: 500;
+        /* margin-top: 3rem; */
+    }
+}
+
+.company h2 {
+    width: 15rem;
+    height: 10rem;
+    margin: 3rem 0;
+    color: #fff;
+    font-size: 1.6rem;
+    padding: 1rem;
+    background: #003366;
+    opacity: 0.6;
+}
+
+@media screen and (min-width: 768px) {
+    .company h2 {
+        width: 30rem;
+        height: 20rem;
+        margin: 5rem 3rem;
+    }
+}
+
+ol {
+    margin-top: -40%;
+    padding: 0 1rem;
+    /* background: #f2f1f1; */
+}
+
+@media screen and (min-width: 768px) {
+    ol {
+        margin-top: -25%;
+        padding: 0 4rem;
+    }
+}
+
+li {
+    font-family: 'Oswald', sans-serif;
+    margin: 0.4rem;
+    padding: 1rem;
+    background: #f9f9f9;
+    position: relative;
+    z-index: .5;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+@media screen and (min-width: 768px) {
+    li {
+        margin: 1.4rem;
+        padding: 1rem 2rem;
+    }
+}
+
+
+
+
+
